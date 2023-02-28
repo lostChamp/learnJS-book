@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const sumInput = () => {
+            let arrOfNum = [];
+
+            while(true) {
+                let value = prompt("Введите число");
+
+                if(value === "" || value === null) {
+                    break;
+                }
+
+                arrOfNum.push(Number(value));
+            }
+
+            let sum = 0;
+
+            for(let num of arrOfNum) {
+                sum += num;
+            }
+
+            return sum;
+        }
+
+        alert(sumInput());
+    </script>
+</body>
+</html>
